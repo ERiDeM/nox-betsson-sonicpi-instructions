@@ -1,3 +1,5 @@
+# by Miguel, eridem.net
+
 use_synth :blade
 speed = 0.3
 
@@ -77,6 +79,43 @@ notesNumber.times do
 end
 
 ##########
+# Intro
+##########
+intro1 = [:f5, :d5, :a4, :d5]
+intro2 = [:f5, :c5, :a4, :c5]
+intro3 = [:e5, :cs5, :a4, :cs5]
+2.times do
+  i = 0
+  intro1.length.times do
+    note = intro1[i]
+    play note, sustain: 0.3
+    sleep 0.5 * speed
+    i = i +1
+  end
+end
+2.times do
+  i = 0
+  intro2.length.times do
+    note = intro2[i]
+    play note, sustain: 0.3
+    sleep 0.5 * speed
+    i = i +1
+  end
+end
+drumVolume = 0
+4.times do
+  i = 0
+  intro3.length.times do
+    note = intro3[i]
+    play note, sustain: 0.3
+    sample :drum_snare_soft, amp: 0.1 * drumVolume
+    sleep 0.5 * speed
+    i = i + 1
+    drumVolume = drumVolume + 1
+  end
+end
+
+##########
 # Notes
 ##########
 in_thread do
@@ -95,7 +134,7 @@ end
 # Effects
 ##########
 in_thread do
-  sleep (duration * speed) - (1 * speed)
+  sleep (duration * speed) - (2 * speed)
   sample :vinyl_rewind
 end
 

@@ -1,6 +1,6 @@
 angular.module('sonicpiapp', [])
     .controller('SamplesController', function () {
-        this.path = "./data/samples/";
+        this.path = "./website/data/samples/";
         this.data = [
             {
                 "categoryName": "Ambi",

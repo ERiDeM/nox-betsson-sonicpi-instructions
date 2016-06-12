@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sonicpiapp">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="js/samples.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>Sonic Pi Samples</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>   
+        <div ng-controller="SamplesController as sc">
+            <div ng-repeat="sample in sc.data">
+                <h1>{{sample.categoryName}}</h1>
+                <ul>
+                    <li ng-repeat="file in sample.files" ng-click="sc.play(file)" >
+                        <div class="sample-name">:{{file.replace('.mp3','')}}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+sample :ambi_choir
+sleep 1
+sample :bass_dnb_f
+sleep 1
+sample :drum_bass_hard
+sleep 1
+sample :elec_beep
+sleep 1
+sample :guit_e_fifths
+sleep 1
+sample :perc_snap
+sleep 1
+sample :vinyl_backspin
+sleep 1
+sample :loop_amen
+sleep 2
+sample :loop_mika

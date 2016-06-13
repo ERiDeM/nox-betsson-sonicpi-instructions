@@ -5,7 +5,7 @@ This repository contains examples of the usage for Sonic Pi for the event betwee
 # Let's start!
 
 - Download [Sonic Pi](http://sonic-pi.net/)
-- Go to https://github.com/ERiDeM/nox-sonicpi-instructions
+- Go to https://github.com/ERiDeM/nox-betsson-sonicpi-instructions
 - Click on the button ```Clone or download```
 - Choose ```Download ZIP```
 - Decompress the downloaded ZIP file
